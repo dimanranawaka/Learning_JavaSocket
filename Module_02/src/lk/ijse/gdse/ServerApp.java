@@ -1,9 +1,6 @@
 package lk.ijse.gdse;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -24,6 +21,8 @@ public class ServerApp {
         DataInputStream dataInputStream = new DataInputStream(localSocket.getInputStream()); // to Receive Messages
 
         InputStreamReader inputStreamReader = new InputStreamReader(System.in); // Taking Input for send messages
+
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader); //Converting Input data to String
 
 
     }
