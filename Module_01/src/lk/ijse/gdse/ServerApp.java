@@ -9,6 +9,9 @@ public class ServerApp {
         final int PORT = 8000;
         ServerSocket serverSocket = new ServerSocket(8000); //Server Socket for listening
 
-        System.out.println("Server is running in port"+ PORT);
+        System.out.println("Server is running in port: "+ PORT);
+
+        Socket localSocket = serverSocket.accept();// For accepting socket to Keep the program running
+
     }
 }
