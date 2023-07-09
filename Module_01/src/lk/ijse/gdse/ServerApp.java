@@ -24,6 +24,8 @@ public class ServerApp {
 
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader); // Converting data from inputStream to String
 
+        String clientMsg = bufferedReader.readLine(); // Reading Client's Message line by line
 
+        System.out.println("Client Says : "+ clientMsg); // Printing that message
     }
 }
