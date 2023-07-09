@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Learning_JavaSocket.iml" filepath="$PROJECT_DIR$/Learning_JavaSocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module_01/Module_01.iml" filepath="$PROJECT_DIR$/Module_01/Module_01.iml" />
     </modules>
   </component>
 </project>
