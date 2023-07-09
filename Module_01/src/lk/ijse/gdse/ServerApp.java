@@ -15,5 +15,7 @@ public class ServerApp {
         Socket localSocket = serverSocket.accept();// For accepting socket to Keep the program running
 
         System.out.println("Port "+ localSocket.getPort()); //Checking client's port AKA Remote Port
+
+        System.out.println("IP "+localSocket.getInetAddress()); //Checking client's IP Address
     }
 }
