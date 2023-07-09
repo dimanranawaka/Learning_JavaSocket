@@ -1,5 +1,6 @@
 package lk.ijse.gdse;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
@@ -20,6 +21,8 @@ public class ServerApp {
         System.out.println("IP "+localSocket.getInetAddress()); //Checking client's IP Address
 
         InputStreamReader inputStreamReader = new InputStreamReader(localSocket.getInputStream());
+
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader); // Converting data from inputStream to String
 
 
     }
