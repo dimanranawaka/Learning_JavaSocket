@@ -20,9 +20,9 @@ public class ServerApp {
 
         DataInputStream dataInputStream = new DataInputStream(localSocket.getInputStream()); // to Receive Messages
 
-        InputStreamReader inputStreamReader = new InputStreamReader(System.in); // Taking Input for send messages
+//        InputStreamReader inputStreamReader = new InputStreamReader(System.in); // Taking Input for send messages
 
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader); //Converting Input data to String
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in)); //Converting Input data to String
 
 
     }
