@@ -1,6 +1,7 @@
 package lk.ijse.gdse;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -17,5 +18,9 @@ public class ServerApp {
         System.out.println("Port "+ localSocket.getPort()); //Checking client's port AKA Remote Port
 
         System.out.println("IP "+localSocket.getInetAddress()); //Checking client's IP Address
+
+        InputStreamReader inputStreamReader = new InputStreamReader(localSocket.getInputStream());
+
+
     }
 }
