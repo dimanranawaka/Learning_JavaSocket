@@ -1,5 +1,7 @@
 package lk.ijse.gdse;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,6 +18,9 @@ public class ServerApp {
         Socket localSocket = serverSocket.accept(); // For accepting client's socket to keep the program running
         System.out.println("Client Accepted!");
 
+        DataOutputStream dataOutputStream = new DataOutputStream(localSocket.getOutputStream()); // to Send Messages
+
+        DataInputStream dataInputStream = new DataInputStream(localSocket.getInputStream()); // to Receive Messages
 
     }
 }
