@@ -11,5 +11,6 @@ public class ClientApp {
 
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
         printWriter.println("Hello Server!");
+        printWriter.flush(); // Synchronizing the message
     }
 }
