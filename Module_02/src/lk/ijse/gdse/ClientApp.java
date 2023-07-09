@@ -8,6 +8,8 @@ public class ClientApp {
 
         final int PORT = 3000;
 
-        Socket socket = new Socket("localhost",PORT); // Client
+        Socket socket = new Socket("localhost",PORT); // Client socket to request From Server
+
+
     }
 }
